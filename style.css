@@ -77,3 +77,55 @@ body {
   background: #c40f18;
   transform: translateY(-2px);
 }
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-icons {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ico {
+  position: absolute;
+  bottom: -60px;
+  left: var(--x);
+  font-size: var(--size);
+  opacity: 0.18;
+  filter: grayscale(100%);
+  animation-name: float, sway;
+  animation-duration: var(--d), 6s;
+  animation-delay: var(--delay), 0s;
+  animation-iteration-count: infinite, infinite;
+  animation-timing-function: linear, ease-in-out;
+  animation-direction: normal, alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(-120vh) rotate(25deg);
+  }
+}
+
+@keyframes sway {
+  from {
+    translate: -25px 0;
+  }
+  to {
+    translate: 25px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ico {
+    animation: none;
+    display: none;
+  }
+}
