@@ -144,3 +144,29 @@ body {
   text-align: center;
   text-decoration: none;
 }
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  background: #ffffff;
+  border-bottom: 1px solid #e3ebe5;
+}
+
+.back-link {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--red);
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid var(--red);
+  border-radius: 999px;
+}
+
+.page-head {
+  padding-top: 70px;
+}
