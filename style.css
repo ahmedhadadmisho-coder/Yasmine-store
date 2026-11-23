@@ -120,3 +120,27 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  width: 100%;
+  max-width: 480px;
+  padding: 16px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  padding: 8px;
+  background: #ffffff;
+  border: 2px solid var(--green);
+  border-radius: 12px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
