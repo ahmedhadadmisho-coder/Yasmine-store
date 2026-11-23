@@ -7,15 +7,21 @@
   <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-  <div class="categories">
-    <a href="products.html" class="category">تنظيف الأرضيات</a>
-    <a href="products.html" class="category">المطبخ</a>
-    <a href="products.html" class="category">الحمام</a>
-    <a href="products.html" class="category">الغسيل</a>
-    <a href="products.html" class="category">العناية الشخصية</a>
-    <a href="products.html" class="category">المعقمات</a>
-    <a href="products.html" class="category">الأدوات</a>
-    <a href="products.html" class="category">الأكياس</a>
-  </div>
+  <div class="categories" id="categories"></div>
+
+  <script>
+    fetch('categories.json')
+      .then(response => response.json())
+      .then(categories => {
+        const container = document.getElementById('categories');
+        categories.forEach(cat => {
+          const link = document.createElement('a');
+          link.href = 'products.html?category=' + cat.id;
+          link.className = 'category';
+          link.textContent = cat.name;
+          container.appendChild(link);
+        });
+      });
+  </script>
 </body>
 </html>
