@@ -1,0 +1,10 @@
+[
+  { "id": "floors", "name": "تنظيف الأرضيات" },
+  { "id": "kitchen", "name": "المطبخ" },
+  { "id": "bathroom", "name": "الحمام" },
+  { "id": "laundry", "name": "الغسيل" },
+  { "id": "personal", "name": "العناية الشخصية" },
+  { "id": "disinfect", "name": "المعقمات" },
+  { "id": "tools", "name": "الأدوات" },
+  { "id": "bags", "name": "الأكياس" }
+]
