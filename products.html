@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>المنتجات</title>
-    <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body class="products-page">
   <div class="topbar">
@@ -13,25 +13,36 @@
 
   <div class="page-head"></div>
 
-  <div class="product">
-    <img src="https://placehold.co/200x200" alt="سائل جلي">
-    <h2>سائل جلي</h2>
-    <p>السعر: 5 دينار</p>
-    <button>أضف إلى السلة</button>
-  </div>
+  <div id="products"></div>
 
-  <div class="product">
-    <img src="https://placehold.co/200x200" alt="مسحوق غسيل">
-    <h2>مسحوق غسيل</h2>
-    <p>السعر: 12 دينار</p>
-    <button>أضف إلى السلة</button>
-  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const categoryId = params.get('category');
 
-  <div class="product">
-    <img src="https://placehold.co/200x200" alt="معقم أرضيات">
-    <h2>معقم أرضيات</h2>
-    <p>السعر: 8 دينار</p>
-    <button>أضف إلى السلة</button>
-  </div>
+    Promise.all([
+      fetch('products.json').then(r => r.json()),
+      fetch('categories.json').then(r => r.json())
+    ]).then(([products, categories]) => {
+      const container = document.getElementById('products');
+      const filtered = products.filter(p => p.category === categoryId);
+
+      if (filtered.length === 0) {
+        container.innerHTML = '<p style="text-align:center">لا توجد منتجات في هذا القسم</p>';
+        return;
+      }
+
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'product';
+        card.innerHTML = `
+          <img src="${p.image}" alt="${p.name}">
+          <h2>${p.name}</h2>
+          <p>السعر: ${p.price} دينار</p>
+          <button>أضف إلى السلة</button>
+        `;
+        container.appendChild(card);
+      });
+    });
+  </script>
 </body>
 </html>
