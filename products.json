@@ -1,0 +1,33 @@
+[
+  { "id": "p1", "name": "منظف أرضيات ليمون", "price": 6, "category": "floors", "image": "https://placehold.co/200x200" },
+  { "id": "p2", "name": "مطهر أرضيات", "price": 9, "category": "floors", "image": "https://placehold.co/200x200" },
+  { "id": "p3", "name": "ممسحة أرضيات", "price": 15, "category": "floors", "image": "https://placehold.co/200x200" },
+
+  { "id": "p4", "name": "منظف دهون المطبخ", "price": 7, "category": "kitchen", "image": "https://placehold.co/200x200" },
+  { "id": "p5", "name": "إسفنج جلي", "price": 2, "category": "kitchen", "image": "https://placehold.co/200x200" },
+  { "id": "p6", "name": "سائل جلي", "price": 5, "category": "kitchen", "image": "https://placehold.co/200x200" },
+
+  { "id": "p7", "name": "منظف حمامات", "price": 8, "category": "bathroom", "image": "https://placehold.co/200x200" },
+  { "id": "p8", "name": "معطر حمام", "price": 4, "category": "bathroom", "image": "https://placehold.co/200x200" },
+  { "id": "p9", "name": "مزيل جير", "price": 6, "category": "bathroom", "image": "https://placehold.co/200x200" },
+
+  { "id": "p10", "name": "مسحوق غسيل", "price": 12, "category": "laundry", "image": "https://placehold.co/200x200" },
+  { "id": "p11", "name": "منعم ملابس", "price": 7, "category": "laundry", "image": "https://placehold.co/200x200" },
+  { "id": "p12", "name": "مزيل بقع", "price": 9, "category": "laundry", "image": "https://placehold.co/200x200" },
+
+  { "id": "p13", "name": "صابون يدين", "price": 3, "category": "personal", "image": "https://placehold.co/200x200" },
+  { "id": "p14", "name": "شامبو", "price": 10, "category": "personal", "image": "https://placehold.co/200x200" },
+  { "id": "p15", "name": "معجون أسنان", "price": 4, "category": "personal", "image": "https://placehold.co/200x200" },
+
+  { "id": "p16", "name": "معقم كحولي", "price": 5, "category": "disinfect", "image": "https://placehold.co/200x200" },
+  { "id": "p17", "name": "مناديل مطهرة", "price": 6, "category": "disinfect", "image": "https://placehold.co/200x200" },
+  { "id": "p18", "name": "مطهر سطوح", "price": 8, "category": "disinfect", "image": "https://placehold.co/200x200" },
+
+  { "id": "p19", "name": "مكنسة", "price": 11, "category": "tools", "image": "https://placehold.co/200x200" },
+  { "id": "p20", "name": "دلو تنظيف", "price": 9, "category": "tools", "image": "https://placehold.co/200x200" },
+  { "id": "p21", "name": "قفازات تنظيف", "price": 3, "category": "tools", "image": "https://placehold.co/200x200" },
+
+  { "id": "p22", "name": "أكياس قمامة كبيرة", "price": 4, "category": "bags", "image": "https://placehold.co/200x200" },
+  { "id": "p23", "name": "أكياس قمامة صغيرة", "price": 2, "category": "bags", "image": "https://placehold.co/200x200" },
+  { "id": "p24", "name": "أكياس تغليف", "price": 3, "category": "bags", "image": "https://placehold.co/200x200" }
+]
