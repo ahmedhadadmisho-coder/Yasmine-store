@@ -12,8 +12,6 @@ body {
   margin: 0;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 24px 16px;
   font-family: Tahoma, Arial, sans-serif;
   color: var(--text);
@@ -169,4 +167,7 @@ body {
 
 .page-head {
   padding-top: 70px;
+}
+.products-page {
+  display: block;
 }
